@@ -1,0 +1,13 @@
+developer-portfolio/
+├── index.html
+├── public/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── themes.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── particles.js
+│   └── images/
+│       └── (your image files)
+├── README.md
+└── package.json

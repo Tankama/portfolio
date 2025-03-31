@@ -1,0 +1,16 @@
+{
+    "name": "developer-portfolio",
+    "version": "1.0.0",
+    "description": "A modern developer portfolio website",
+    "main": "index.html",
+    "scripts": {
+        "start": "live-server --port=3000",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "live-server": "^1.2.0",
+        "particles.js": "^2.0.0"
+    }
+}
