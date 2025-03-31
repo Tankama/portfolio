@@ -1,0 +1,94 @@
+/* Light Theme (Default) */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-bg: #fff;
+    --nav-bg: #fff;
+    --nav-text: #333;
+    --nav-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f1f1f1;
+    --card-bg: #2d2d2d;
+    --nav-bg: #2d2d2d;
+    --nav-text: #f1f1f1;
+    --nav-shadow: rgba(0, 0, 0, 0.3);
+    --dark-color: #f1f1f1;
+    --light-color: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.nav {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
+}
+
+.nav.scrolled {
+    background-color: var(--nav-bg);
+    box-shadow: 0 5px 20px var(--nav-shadow);
+}
+
+.project-card,
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--card-bg);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
